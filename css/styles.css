@@ -35,14 +35,6 @@ h1 {
     text-shadow: 2px 2px 2px #black;
 }
 
-.mobile-nav h1 {
-    font-size: 50px;
-}
-
-.mobile-nav h2 {
-    font-size: 60px;
-}
-
 h2 {
     font-family: "Orbitron-Black";
     font-size: 90px;
@@ -57,6 +49,14 @@ h3 {
     font-size: 37px;
     font-weight: lighter;
     color: black;
+}
+
+.mobile-nav h1 {
+    font-size: 50px;
+}
+
+.mobile-nav h2 {
+    font-size: 60px;
 }
 
 p {
@@ -88,23 +88,6 @@ a:active {
     margin-top: 23px;
 }
 
-.hero-button {
-    background: transparent;
-    color: white;
-    border: 4px solid white;
-    font-family: "Lato-Bold";
-    font-size: 30px;
-    padding: 7px 30px;
-    text-transform: uppercase;
-    border-radius: 7px;
-    margin-top: 23px;
-}
-
-.mobile-nav .hero-button {
-    margin-right: 45%;
-    text-decoration: none;
-}
-
 .light-button {
     background: transparent;
     color: white;
@@ -128,12 +111,6 @@ a:active {
   text-align: right;
 }
 
-
-
-/* ***********************************************
-DESKTOP STYLES
-*********************************************** */
-
 .wrapper {
     padding-left: 5%;
     padding-right: 5%;
@@ -150,6 +127,18 @@ DESKTOP STYLES
     float: left;
 }
 
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* ***********************************************
+DESKTOP STYLES
+*********************************************** */
+
 header .desktop-nav ul {
     float: right;
     margin-top: 10px;
@@ -161,30 +150,6 @@ header .desktop-nav ul {
 header .desktop-nav li {
     display: inline-block;
     margin-left: 25px;
-}
-
-ul {
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
-
-.frosted-effect a, a:visited {
-    color: #000000;
-    transition: .3s;
-    transform:scale(1);
-    text-transform: none;
-}
-
-.frosted-effect a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: #000000;
-    transform: scale(1.05);
-    border-color: white;
-    text-transform: none;
 }
 
 /* ***********************************************
@@ -223,6 +188,23 @@ MOBILE STYLES
 /* ***********************************************
 HERO STYLES
 *********************************************** */
+.hero-button {
+    background: transparent;
+    color: white;
+    border: 4px solid white;
+    font-family: "Lato-Bold";
+    font-size: 30px;
+    padding: 7px 30px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    margin-top: 23px;
+}
+
+.mobile-nav .hero-button {
+    margin-right: 45%;
+    text-decoration: none;
+}
+
 body, html {
     width: 100%;
     height: 100%;
@@ -412,6 +394,21 @@ PRODUCT-SUPPORT STYLES
 
 .frosted-effect, .frosted-glass::before {
     background: url("../img/Kyoto.jpg") 0 / cover fixed;
+}
+
+.frosted-effect a, a:visited {
+    color: #000000;
+    transition: .3s;
+    transform:scale(1);
+    text-transform: none;
+}
+
+.frosted-effect a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #000000;
+    transform: scale(1.05);
+    border-color: white;
+    text-transform: none;
 }
 
 .card {
