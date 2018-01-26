@@ -51,14 +51,6 @@ h3 {
     color: black;
 }
 
-.mobile-nav h1 {
-    font-size: 50px;
-}
-
-.mobile-nav h2 {
-    font-size: 60px;
-}
-
 p {
     font-family: "Lato-Bold";
     font-size: 16px;
@@ -79,25 +71,18 @@ a:active {
     border-color: #006099;
 }
 
-.button {
-    font-family: "Oswald-Regular", sans-serif;
-    font-size: 12px;
-    padding: 10px 30px;
-    text-transform: uppercase;
-    border-radius: 20px;
-    margin-top: 23px;
+ul {
+    padding: 0;
 }
 
-.light-button {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
+li {
+    list-style: none;
 }
 
-.dark-button {
-    background: white;
-    color: #161616;
-    border: 2px solid white;
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 .floatleft {
@@ -127,90 +112,33 @@ a:active {
     float: left;
 }
 
-ul {
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
 /* ***********************************************
-DESKTOP STYLES
+GENERAL BUTTON STYLES
 *********************************************** */
-
-header .desktop-nav ul {
-    float: right;
-    margin-top: 10px;
-    padding: 0;
-    width: calc(100% - 60px);
-    text-align: right;
-}
-
-header .desktop-nav li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/* ***********************************************
-MOBILE STYLES
-*********************************************** */
-
-.mobile-nav {
-    display: none;
-}
-
-.mobile-nav .hamburger-container {
-    float: right;
-    margin-top: 5px;
-    padding: 0;
-    width: calc(100% - 60px);
-    text-align: right;
-}
-
-.fa-bars:hover {
-    color: #006099;
-}
-
-
-.mobile-nav .logo-container {
-    display: inline-block;
-    margin-left: -4px;
-    width: calc(100% - 80px)
-}
-
-.mobile-nav button {
-    background: transparent;
-    border: none;
-    color: white;
-}
-
-/* ***********************************************
-HERO STYLES
-*********************************************** */
-.hero-button {
-    background: transparent;
-    color: white;
-    border: 4px solid white;
-    font-family: "Lato-Bold";
-    font-size: 30px;
-    padding: 7px 30px;
+.button {
+    font-family: "Oswald-Regular", sans-serif;
+    font-size: 12px;
+    padding: 10px 30px;
     text-transform: uppercase;
-    border-radius: 7px;
+    border-radius: 20px;
     margin-top: 23px;
 }
 
-.mobile-nav .hero-button {
-    margin-right: 45%;
-    text-decoration: none;
+.light-button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
 }
 
-body, html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+.dark-button {
+    background: white;
+    color: #161616;
+    border: 2px solid white;
 }
 
+/* ***********************************************
+BACKGROUND AND IMAGE GENERAL STYLES
+*********************************************** */
 .panel {
   width: 100%;
   height: 100%;
@@ -246,6 +174,81 @@ body, html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+/* ***********************************************
+NAVIGATION DESKTOP STYLES
+*********************************************** */
+header .desktop-nav ul {
+    float: right;
+    margin-top: 10px;
+    padding: 0;
+    width: calc(100% - 60px);
+    text-align: right;
+}
+
+header .desktop-nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* ***********************************************
+NAVIGATION MOBILE STYLES
+*********************************************** */
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav .hamburger-container {
+    float: right;
+    margin-top: 5px;
+    padding: 0;
+    width: calc(100% - 60px);
+    text-align: right;
+}
+
+.mobile-nav .logo-container {
+    display: inline-block;
+    margin-left: -4px;
+    width: calc(100% - 80px)
+}
+
+.mobile-nav button {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.mobile-nav h1 {
+    font-size: 50px;
+}
+
+.mobile-nav h2 {
+    font-size: 60px;
+}
+
+.fa-bars:hover {
+    color: #006099;
+}
+
+/* ***********************************************
+HERO STYLES
+*********************************************** */
+.hero-button {
+    background: transparent;
+    color: white;
+    border: 4px solid white;
+    font-family: "Lato-Bold";
+    font-size: 30px;
+    padding: 7px 30px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    margin-top: 23px;
+}
+
+.mobile-nav .hero-button {
+    margin-right: 45%;
+    text-decoration: none;
 }
 
 
