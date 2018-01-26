@@ -246,22 +246,12 @@ HERO STYLES
     margin-top: 23px;
 }
 
-.mobile-nav .hero-button {
-    margin-right: 45%;
-    text-decoration: none;
-}
-
-
 .hero-text-container {
     padding-left: 5%;
     padding-top: 50px;
     width: 100%;
     height: 30px;
     margin-bottom: calc(95vh - 200px);
-}
-
-.mobile-nav .hero-text-container {
-    margin-bottom: calc(72vh - 180px);
 }
 
 .hero-text-container-2 {
@@ -288,19 +278,22 @@ HERO STYLES
     background-position: center;
 }
 
+.mobile-nav .hero-button {
+    margin-right: 45%;
+    text-decoration: none;
+}
+
+.mobile-nav .hero-text-container {
+    margin-bottom: calc(72vh - 180px);
+}
+
 /* ***********************************************
-PRODUCT-LINEUP STYLES
+QUOTE STYLES
 *********************************************** */
 .product-linup-container {
     background-image: url("../img/clouds.jpg");
     height: 350px;
     background-position: center
-}
-
-.mobile-nav .product-linup-container {
-    background-image: url("../img/clouds.jpg");
-    background-position: center;
-    height: 600px;
 }
 
 .product-linup-text-container {
@@ -323,13 +316,37 @@ PRODUCT-LINEUP STYLES
     margin-top: 350px;
 }
 
+.mobile-nav .product-linup-container {
+    background-image: url("../img/clouds.jpg");
+    background-position: center;
+    height: 600px;
+}
 
 /* ***********************************************
-FEATURED-PRODUCT STYLES
+XL SPLASH STYLES
 *********************************************** */
 .featured-product-container {
     height: 700px;
     padding-top: 20px;
+}
+
+.featured-product-text-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 0px;
+}
+
+.featured-product-text-container h1 {
+    color: maroon;
+}
+
+.featured-product-text-container p {
+    font-size: 37px;
+    font-weight: 100;
+    margin-bottom: 15px;
 }
 
 .desktop-nav .featured-product-container {
@@ -352,27 +369,8 @@ FEATURED-PRODUCT STYLES
     background-position: left;
 }
 
-.featured-product-text-container {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 0px;
-    width: 100%;
-    height: 350px;
-    margin-bottom: 0px;
-}
-
-.featured-product-text-container p {
-    font-size: 37px;
-    font-weight: 100;
-    margin-bottom: 15px;
-}
-
-.featured-product-text-container h1 {
-    color: maroon;
-}
-
 /* ***********************************************
-PRODUCT-SUPPORT STYLES
+FROSTED GLASS STYLES
 *********************************************** */
 .frosted-glass {
     height: 700px;
