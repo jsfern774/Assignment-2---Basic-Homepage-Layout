@@ -127,6 +127,9 @@ a:active {
 .alignright {
   text-align: right;
 }
+
+
+
 /* ***********************************************
 DESKTOP STYLES
 *********************************************** */
@@ -147,7 +150,7 @@ DESKTOP STYLES
     float: left;
 }
 
-.desktop-nav ul {
+header .desktop-nav ul {
     float: right;
     margin-top: 10px;
     padding: 0;
@@ -155,7 +158,7 @@ DESKTOP STYLES
     text-align: right;
 }
 
-.desktop-nav li {
+header .desktop-nav li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -199,6 +202,11 @@ MOBILE STYLES
     width: calc(100% - 60px);
     text-align: right;
 }
+
+.fa-bars:hover {
+    color: #006099;
+}
+
 
 .mobile-nav .logo-container {
     display: inline-block;
@@ -556,7 +564,7 @@ SUBSCRIPTION STYLES
 /* ***********************************************
 FOOTER STYLES
 *********************************************** */
-footer {
+footer .desktop-nav {
     background-color: #075583;
     background-image: linear-gradient(
         180deg,
@@ -568,12 +576,16 @@ footer {
     padding-right: 10%;
 }
 
-footer h1 {
-
-}
-
-footer p {
-
+footer .mobile-nav {
+    background-color: #075583;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+        rgba(7, 85,131, 0));
+    height: 700px;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 footer .logo {
@@ -594,7 +606,7 @@ footer .logo {
 
 
 footer h1 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 footer a, a:visited {
@@ -609,6 +621,18 @@ footer a:hover, a:focus, a:active {
     opacity: .7;
 }
 
+.footer_menu a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.drop-down a {
+  min-width: 90px;
+}
+
+.drop-down-menu {
+  display: block;
+}
 /* ***********************************************
 @MEDIA STYLES
 *********************************************** */
