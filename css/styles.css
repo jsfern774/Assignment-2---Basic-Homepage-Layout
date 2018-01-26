@@ -23,7 +23,7 @@ header {
         180deg,
         rgba(7, 85,131, 0),
         rgba(0, 9, 14, 1));
-    height: 80px;
+    height: 100px;
     padding-top: 20px;
 }
 
@@ -291,8 +291,6 @@ body, html {
         rgba(0, 9, 14, 1),
         rgba(0, 0, 0, 0));
 }
-
-        /* ),url("../img/airship.jpg"); */
 
 .mobile-nav .hero {
     height: calc(83vh - 60px);
@@ -564,28 +562,26 @@ SUBSCRIPTION STYLES
 /* ***********************************************
 FOOTER STYLES
 *********************************************** */
-footer .desktop-nav {
+footer {
     background-color: #075583;
     background-image: linear-gradient(
         180deg,
         rgba(0, 9, 14, 1),
         rgba(7, 85,131, 0));
-    height: 350px;
     padding-top: 50px;
+}
+
+footer .desktop-nav {
+    height: 350px;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 footer .mobile-nav {
-    background-color: #075583;
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 9, 14, 1),
-        rgba(7, 85,131, 0));
-    height: 700px;
-    padding-top: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
+    height: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 50px;
 }
 
 footer .logo {
@@ -622,17 +618,101 @@ footer a:hover, a:focus, a:active {
 }
 
 .footer_menu a {
-  display: block;
-  padding: 10px 15px;
+    display: block;
+    padding: 10px 15px;
+}
+
+.drop-down {
+    max-height: 0;
+    overflow: hidden;
 }
 
 .drop-down a {
-  min-width: 90px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Lato-Bold";
+    font-size: 18px;
+    padding: 15px;
+    height: auto;
+    display:block;
+    border-bottom: 1px solid white;
+}
+
+.drop-down a:hover, a:focus, a:active {
+    background: #075583;
+    opacity: 1;
+    text-transform: uppercase;
+    transform: none;
 }
 
 .drop-down-menu {
-  display: block;
+    display: block;
 }
+
+.drop-down-menu span {
+	display:inline;
+	float:right;
+	position:relative;
+}
+
+.menu-title {
+    align-self: center;
+    display: block;
+    padding: 10px 15px;
+    height: 90px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Orbitron-Medium";
+    font-size: 37px;
+}
+
+.menu-title:hover {
+    color: #075583;
+    border-color: #075583;
+}
+
+.activate:checked ~ .menu-title {
+    background-color: #075583;
+    color: white;
+    border-color: white;
+}
+
+.activate:checked ~ .drop-down {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.menu-title i {
+    font-size: normal;
+}
+
+.activate {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin: 0 0 0 -15px;
+    opacity: 0;
+}
+
+.activate:checked ~ .drop-down {
+    max-height: 700px;
+}
+
+.drop-down, .footer_menu a, .drop-down-menu {
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 /* ***********************************************
 @MEDIA STYLES
 *********************************************** */
