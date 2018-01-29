@@ -88,6 +88,7 @@ body, html {
 .floatleft {
 	float: left;
 }
+
 .floatright {
 	float: right;
 }
@@ -113,7 +114,7 @@ body, html {
 }
 
 /* ***********************************************
-GENERAL BUTTON STYLES
+BUTTON STYLE
 *********************************************** */
 .button {
     font-family: "Oswald-Regular", sans-serif;
@@ -124,22 +125,10 @@ GENERAL BUTTON STYLES
     margin-top: 23px;
 }
 
-.light-button {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-}
-
-.dark-button {
-    background: white;
-    color: #161616;
-    border: 2px solid white;
-}
-
 /* ***********************************************
 BACKGROUND AND IMAGE GENERAL STYLES
 *********************************************** */
-.panel {
+.cloud-overlay {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -147,7 +136,7 @@ BACKGROUND AND IMAGE GENERAL STYLES
   background-size: cover;
   }
 
-.panel1{
+.hero-overlay {
     width: 100%;
     height: 100%;
     background-image: url("../img/airship.jpg");
@@ -156,7 +145,7 @@ BACKGROUND AND IMAGE GENERAL STYLES
     background-size: cover;
 }
 
-.panel2{
+.flagship-overlay {
     width: 100%;
     height: 100%;
     max-height: 700px;
@@ -167,7 +156,7 @@ BACKGROUND AND IMAGE GENERAL STYLES
     z-index: -5;
 }
 
-.panel3{
+.halo-overlay {
     width: 100%;
     height: 100%;
     background-image: url("../img/halo.png");
@@ -290,13 +279,13 @@ HERO STYLES
 /* ***********************************************
 QUOTE STYLES
 *********************************************** */
-.product-linup-container {
+.quote-container {
     background-image: url("../img/clouds.jpg");
     height: 350px;
     background-position: center
 }
 
-.product-linup-text-container {
+.quote-text-container {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 50px;
@@ -306,7 +295,7 @@ QUOTE STYLES
     display: block;
 }
 
-.product-linup-text-container p {
+.quote-text-container p {
   font-size: 37px;
   font-weight: 100;
   margin-bottom: 0px;
@@ -316,21 +305,21 @@ QUOTE STYLES
     margin-top: 350px;
 }
 
-.mobile-nav .product-linup-container {
+.mobile-nav .quote-container {
     background-image: url("../img/clouds.jpg");
     background-position: center;
     height: 600px;
 }
 
 /* ***********************************************
-XL-79 SPLASH STYLES
+FLAGSHIP STYLES
 *********************************************** */
-.featured-product-container {
+.flagship-container {
     height: 700px;
     padding-top: 20px;
 }
 
-.featured-product-text-container {
+.flagship-text-container {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 0px;
@@ -339,17 +328,17 @@ XL-79 SPLASH STYLES
     margin-bottom: 0px;
 }
 
-.featured-product-text-container h1 {
+.flagship-text-container h1 {
     color: maroon;
 }
 
-.featured-product-text-container p {
+.flagship-text-container p {
     font-size: 37px;
     font-weight: 100;
     margin-bottom: 15px;
 }
 
-.desktop-nav .featured-product-container {
+.desktop-nav .flagship-container {
     background-image: linear-gradient(
         180deg,
         rgba(225, 186, 137, .3),
@@ -358,7 +347,7 @@ XL-79 SPLASH STYLES
         rgba(225, 186, 137, .6));
 }
 
-.mobile-nav .featured-product-container {
+.mobile-nav .flagship-container {
     background-image: linear-gradient(
         180deg,
         rgba(225, 186, 137, .3),
@@ -371,7 +360,7 @@ XL-79 SPLASH STYLES
 
 
 /* ***********************************************
-XL-79 CARD STYLES
+FLAGSHIP CARD STYLES
 *********************************************** */
 .card {
     width: 25%;
@@ -401,7 +390,7 @@ XL-79 CARD STYLES
     font-size: 18px;
 }
 /* ***********************************************
-XL-79 FEATURES DESKTOP (FROSTED GLASS) STYLES
+FLAGSHIP FROSTED GLASS (DESKTOP) STYLES
 *********************************************** */
 .frosted-glass {
     height: 700px;
@@ -443,12 +432,6 @@ XL-79 FEATURES DESKTOP (FROSTED GLASS) STYLES
     text-transform: none;
 }
 
-.featured-product-text-container {
-    font-size: 37px;
-    font-weight: 100;
-    margin-bottom: 15px;
-}
-
 .image-circle {
     border-radius: 50%;
     width: 80%;
@@ -457,7 +440,7 @@ XL-79 FEATURES DESKTOP (FROSTED GLASS) STYLES
 }
 
 /* ***********************************************
-XL-79 FEATURED MOBILE (GRADIENT) STYLES
+FLAGSHIP GRADIENT (MOBILE) STYLES
 *********************************************** */
 .mobile-nav .card {
     width: 90%;
@@ -476,7 +459,7 @@ XL-79 FEATURED MOBILE (GRADIENT) STYLES
     margin-bottom: 20px;
 }
 
-.black-glass {
+.gradient {
     height: 1700px;
     z-index: 4;
     position: relative;
@@ -491,7 +474,7 @@ XL-79 FEATURED MOBILE (GRADIENT) STYLES
 /* ***********************************************
 HALO STYLES
 *********************************************** */
-.desktop-nav .subscription-container {
+.desktop-nav .halo-container {
     height: 100vh;
     background-image: linear-gradient(
         180deg,
@@ -501,7 +484,7 @@ HALO STYLES
         rgba(0, 9, 14, 1));
 }
 
-.subscription-text-container {
+.halo-text-container {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 20px;
@@ -510,17 +493,17 @@ HALO STYLES
     margin-bottom: 0px;
 }
 
-.subscription-text-container h2 {
+.halo-text-container h2 {
     color: #181817;
 }
 
-.subscription-text-container p {
+.halo-text-container p {
     font-size: 32px;
     color: white;
     margin-bottom: 0px;
 }
 
-.subscription-button {
+.halo-button {
     background: transparent;
     color: white;
     border: 4px solid white;
@@ -528,11 +511,11 @@ HALO STYLES
     padding: 60px 30px 25px 30px;
 }
 
-.mobile-nav .subscription-text-container {
+.mobile-nav .halo-text-container {
     height:300px;
 }
 
-.mobile-nav .subscription-container {
+.mobile-nav .halo-container {
     height: 675px;
     background-image: linear-gradient(
         180deg,
